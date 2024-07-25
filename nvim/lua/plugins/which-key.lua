@@ -15,6 +15,18 @@ return {
         end,
         desc = "Buffer Local Keymaps (which-key)",
       },
+      -- {
+      --   "<leader>ql",
+      --   function()
+      --     require("which-key").show({ global = false })
+      --   end,
+      --   desc = "Load last session",
+      --
+      --
+      --
+      --
+      --
+      -- }
     },
   }
 
