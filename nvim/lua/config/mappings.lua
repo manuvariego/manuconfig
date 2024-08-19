@@ -40,3 +40,14 @@ vim.keymap.set("n", "<leader>ql", function() require("persistence").load({ last 
 
 -- stop Persistence => session won't be saved on exit
 vim.keymap.set("n", "<leader>qd", function() require("persistence").stop() end)
+
+--Curl nvim mappings
+local curl = require("curl")
+vim.keymap.set("n", "<leader>cc", function() curl.open_curl_tab()
+end, { desc = "Open a curl tab scoped to the current working directory" })
+
+vim.keymap.set("n", "<leader>csc", function() curl.create_scoped_collection()
+end, { desc = "Create or open a collection with a name from user input" })
+
+vim.keymap.set("n", "<leader>fsc", function() curl.pick_scoped_collection()
+end, { desc = "Choose a scoped collection and open it" })
