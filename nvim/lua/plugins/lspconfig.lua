@@ -133,9 +133,15 @@ return {
 
       ["gopls"] = function()
         lspconfig["gopls"].setup({
+          settings = {
+            gopls = {
+              gofumpt = true
+            }
+          },
           capabilities = capabilities,
         })
       end,
+
 
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
