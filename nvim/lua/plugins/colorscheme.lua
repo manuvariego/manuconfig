@@ -1,14 +1,15 @@
 return {
-    { "catppuccin/nvim", 
-      name = "catppuccin", 
-      priority = 1000,
-      config = function ()
-        require("catppuccin").setup({
-          flavour = "mocha",
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+        config = function()
+            require("catppuccin").setup({
+                flavour = "mocha",
 
-        })
-        vim.cmd([[colorscheme catppuccin]])
-      end,
+            })
+            vim.cmd([[colorscheme catppuccin]])
+        end,
     }
 
     -- {
@@ -24,20 +25,20 @@ return {
     --     vim.cmd([[colorscheme everforest]])
     --   end,
     -- },
-  --
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {},
-  --   config = function ()
-  --     require("tokyonight").setup({
-  --       style = "storm"
-  --
-  --
-  --     })
-  --     vim.cmd([[colorscheme tokyonight]])
-  --   end,
-  -- },
+    --
+    -- {
+    --   "folke/tokyonight.nvim",
+    --   lazy = false,
+    --   priority = 1000,
+    --   opts = {},
+    --   config = function ()
+    --     require("tokyonight").setup({
+    --       style = "storm"
+    --
+    --
+    --     })
+    --     vim.cmd([[colorscheme tokyonight]])
+    --   end,
+    -- },
 
 }
