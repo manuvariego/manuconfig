@@ -15,6 +15,7 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 --Harpoon mappings
 local harpoon = require("harpoon")
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Add to harpoon list" })
+vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
 vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end, { desc = "Select harpoon 1" })
 vim.keymap.set("n", "<C-t>", function() harpoon:list():select(2) end, { desc = "Select harpoon 2" })
