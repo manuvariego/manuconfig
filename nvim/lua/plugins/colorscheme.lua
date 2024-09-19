@@ -1,16 +1,31 @@
 return {
+    -- {
+    --     "catppuccin/nvim",
+    --     name = "catppuccin",
+    --     priority = 1000,
+    --     config = function()
+    --         require("catppuccin").setup({
+    --             flavour = "mocha",
+    --
+    --         })
+    --         vim.cmd([[colorscheme catppuccin]])
+    --     end,
+    -- }
+
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
+
+        "ellisonleao/gruvbox.nvim",
         priority = 1000,
         config = function()
-            require("catppuccin").setup({
-                flavour = "mocha",
-
+            require("gruvbox").setup({
             })
-            vim.cmd([[colorscheme catppuccin]])
+            vim.o.background = "light"
+            vim.cmd([[colorscheme gruvbox]])
         end,
     }
+
+
+
 
     -- {
     --   "neanias/everforest-nvim",
