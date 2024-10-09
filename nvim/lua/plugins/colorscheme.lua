@@ -11,18 +11,30 @@ return {
     --         vim.cmd([[colorscheme catppuccin]])
     --     end,
     -- }
-
     {
-
-        "ellisonleao/gruvbox.nvim",
-        priority = 1000,
+        "rose-pine/neovim",
+        name = "rose-pine",
         config = function()
-            require("gruvbox").setup({
+            require("rose-pine").setup({
+                variant = "moon"
             })
-            vim.o.background = "dark"
-            vim.cmd([[colorscheme gruvbox]])
+            vim.cmd([[colorscheme rose-pine]])
         end,
+
+
     }
+
+    -- {
+    --
+    --     "ellisonleao/gruvbox.nvim",
+    --     priority = 1000,
+    --     config = function()
+    --         require("gruvbox").setup({
+    --         })
+    --         vim.o.background = "dark"
+    --         vim.cmd([[colorscheme gruvbox]])
+    --     end,
+    -- }
 
 
 
