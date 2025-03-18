@@ -11,18 +11,27 @@ return {
     --         vim.cmd([[colorscheme catppuccin]])
     --     end,
     -- }
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        config = function()
-            require("rose-pine").setup({
-                variant = "moon"
-            })
-            vim.cmd([[colorscheme rose-pine]])
-        end,
-
-
-    }
+    -- {
+    --     "rebelot/kanagawa.nvim",
+    --     config = function()
+    --         require("kanagawa").setup({
+    --             theme = "wave"
+    --         })
+    --         vim.cmd([[colorscheme kanagawa]])
+    --     end,
+    -- },
+    -- {
+    --     "rose-pine/neovim",
+    --     name = "rose-pine",
+    --     config = function()
+    --         require("rose-pine").setup({
+    --             variant = "moon"
+    --         })
+    --         vim.cmd([[colorscheme rose-pine]])
+    --     end,
+    --
+    --
+    -- }
 
     -- {
     --
@@ -39,33 +48,33 @@ return {
 
 
 
-    -- {
-    --   "neanias/everforest-nvim",
-    --   version = false,
-    --   lazy = false,
-    --   priority = 1000, -- make sure to load this before all the other start plugins
-    --   -- Optional; default configuration will be used if setup isn't called.
-    --   config = function()
-    --     require("everforest").setup({
-    --       -- Your config here
-    --     })
-    --     vim.cmd([[colorscheme everforest]])
-    --   end,
-    -- },
+    {
+        "neanias/everforest-nvim",
+        version = false,
+        lazy = false,
+        priority = 1000, -- make sure to load this before all the other start plugins
+        -- Optional; default configuration will be used if setup isn't called.
+        config = function()
+            require("everforest").setup({
+                -- Your config here
+            })
+            vim.cmd([[colorscheme everforest]])
+        end,
+    },
     --
     -- {
-    --   "folke/tokyonight.nvim",
-    --   lazy = false,
-    --   priority = 1000,
-    --   opts = {},
-    --   config = function ()
-    --     require("tokyonight").setup({
-    --       style = "storm"
+    --     "folke/tokyonight.nvim",
+    --     lazy = false,
+    --     priority = 1000,
+    --     opts = {},
+    --     config = function()
+    --         require("tokyonight").setup({
+    --             style = "storm"
     --
     --
-    --     })
-    --     vim.cmd([[colorscheme tokyonight]])
-    --   end,
+    --         })
+    --         vim.cmd([[colorscheme tokyonight]])
+    --     end,
     -- },
 
 }
