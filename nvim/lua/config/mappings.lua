@@ -9,9 +9,6 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find in buffer" })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Help tags" })
 vim.keymap.set('n', '<leader>fs', builtin.grep_string, { desc = "Grep string under cursor" })
 
---Oil mappings
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
 --Harpoon mappings
 local harpoon = require("harpoon")
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, { desc = "Add to harpoon list" })

@@ -20,18 +20,24 @@ return {
     --         vim.cmd([[colorscheme kanagawa]])
     --     end,
     -- },
-    -- {
-    --     "rose-pine/neovim",
-    --     name = "rose-pine",
-    --     config = function()
-    --         require("rose-pine").setup({
-    --             variant = "moon"
-    --         })
-    --         vim.cmd([[colorscheme rose-pine]])
-    --     end,
     --
-    --
-    -- }
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            require("rose-pine").setup({
+                variant = "main",
+                styles = {
+                    bold = true,
+                    italic = false,
+                    transparency = false,
+                },
+            })
+            vim.cmd([[colorscheme rose-pine]])
+        end,
+
+
+    }
 
     -- {
     --
@@ -48,19 +54,19 @@ return {
 
 
 
-    {
-        "neanias/everforest-nvim",
-        version = false,
-        lazy = false,
-        priority = 1000, -- make sure to load this before all the other start plugins
-        -- Optional; default configuration will be used if setup isn't called.
-        config = function()
-            require("everforest").setup({
-                -- Your config here
-            })
-            vim.cmd([[colorscheme everforest]])
-        end,
-    },
+    -- {
+    --     "neanias/everforest-nvim",
+    --     version = false,
+    --     lazy = false,
+    --     priority = 1000, -- make sure to load this before all the other start plugins
+    --     -- Optional; default configuration will be used if setup isn't called.
+    --     config = function()
+    --         require("everforest").setup({
+    --             -- Your config here
+    --         })
+    --         vim.cmd([[colorscheme everforest]])
+    --     end,
+    -- },
     --
     -- {
     --     "folke/tokyonight.nvim",
