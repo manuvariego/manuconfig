@@ -11,33 +11,34 @@ return {
     --         vim.cmd([[colorscheme catppuccin]])
     --     end,
     -- }
-    -- {
-    --     "rebelot/kanagawa.nvim",
-    --     config = function()
-    --         require("kanagawa").setup({
-    --             theme = "wave"
-    --         })
-    --         vim.cmd([[colorscheme kanagawa]])
-    --     end,
-    -- },
     --
     {
-        "rose-pine/neovim",
-        name = "rose-pine",
+        "rebelot/kanagawa.nvim",
         config = function()
-            require("rose-pine").setup({
-                variant = "main",
-                styles = {
-                    bold = true,
-                    italic = false,
-                    transparency = false,
-                },
+            require("kanagawa").setup({
+                theme = "wave"
             })
-            vim.cmd([[colorscheme rose-pine]])
+            vim.cmd([[colorscheme kanagawa]])
         end,
-
-
-    }
+    },
+    --
+    -- {
+    --     "rose-pine/neovim",
+    --     name = "rose-pine",
+    --     config = function()
+    --         require("rose-pine").setup({
+    --             variant = "main",
+    --             styles = {
+    --                 bold = true,
+    --                 italic = false,
+    --                 transparency = false,
+    --             },
+    --         })
+    --         vim.cmd([[colorscheme rose-pine]])
+    --     end,
+    --
+    --
+    -- }
 
     -- {
     --
